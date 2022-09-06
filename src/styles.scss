@@ -1,6 +1,6 @@
-@use './config-scss/variable.scss';
-@use './config-scss/rem-calc.scss';
-@use './config-scss/reset.scss';
+@import './config-scss/variable.scss';
+@import './config-scss/rem-calc.scss';
+@import './config-scss/reset.scss';
 
 //Font
 @import url('https://font.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
