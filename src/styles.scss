@@ -7,3 +7,19 @@
   box-sizing: border-box;
   font-family: 'Signika', sans-serif;
 }
+
+html, body {
+  height: 100%;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

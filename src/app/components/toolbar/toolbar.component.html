@@ -2,45 +2,37 @@
   <div class="content-wrapper">
     <ul>
       <li class="logo">
-        <a routerLink="#">
-          <span class="fill"></span>
-          <span class="icon icon_home"></span>
-          <span class="title title_home">
-            Página Inicial
-          </span>
+        <a routerLink="/">
+          <img src="assets/logo.png" alt="Pokémon">
         </a>
       </li>
       <li class="home">
-        <a routerLink="#">
-          <span class="fill"></span>
-          <span class="icon icon_home"></span>
+        <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+          <i class="fa-solid fa-house"></i>
           <span class="title title_home">
             Página Inicial
           </span>
         </a>
       </li>
       <li class="explore">
-        <a routerLink="#">
-          <span class="fill"></span>
-          <span class="icon icon_home"></span>
+        <a routerLink="/explore" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+          <i class="fa-solid fa-magnifying-glass"></i>
           <span class="title title_home">
             Pokédex
           </span>
         </a>
       </li>
       <li class="watch">
-        <a routerLink="#">
-          <span class="fill"></span>
-          <span class="icon icon_home"></span>
+        <a routerLink="/watch" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+          <i class="fa-solid fa-mobile-screen-button"></i>
           <span class="title title_home">
             Aplicativos Móveis
           </span>
         </a>
       </li>
       <li class="play">
-        <a routerLink="#">
-          <span class="fill"></span>
-          <span class="icon icon_home"></span>
+        <a routerLink="/play" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+          <i class="fa-solid fa-tv"></i>
           <span class="title title_home">
             TV Pokémon
           </span>
@@ -49,7 +41,3 @@
     </ul>
   </div>
 </mat-toolbar>
-
-<main>
-  <pokemon-list></pokemon-list>
-</main>
