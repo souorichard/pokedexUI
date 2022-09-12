@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Pokemon } from '../models/Pokemon';
 import { from, map, mergeMap } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,9 +12,8 @@ export class PokemonService {
   public pokemons: Pokemon[] = [];
 
   constructor( private httpClient: HttpClient ) {
-    const allPokemonsUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150'
 
-    this.httpClient.get<any>(allPokemonsUrl).pipe(
+    this.httpClient.get<any>(environment.allPokemonsUrl).pipe(
       map(value => value.results),
       map((value: any) => {
         return from(value).pipe(
@@ -27,5 +27,6 @@ export class PokemonService {
       name: result.name,
       types: result.types.map((t: any) => t.type.name)
     });
+
   }
 }

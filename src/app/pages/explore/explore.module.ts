@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { ExploreRoutingModule } from './explore-routing.module';
 import { ExploreComponent } from './explore/explore.component';
+import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
+import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 
 
 @NgModule({
   declarations: [
-    ExploreComponent
+    ExploreComponent,
+    PokemonCardComponent,
+    PokemonListComponent,
   ],
   imports: [
     CommonModule,

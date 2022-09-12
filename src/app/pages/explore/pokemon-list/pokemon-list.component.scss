@@ -1,0 +1,9 @@
+@import '../../../../config-scss/rem-calc.scss';
+
+.pokemons {
+  width: 80%;
+  padding: rem-calc(20);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
