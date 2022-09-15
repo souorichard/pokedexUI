@@ -1,0 +1,7 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variable.scss';
+
+.footer {
+  max-height: rem-calc(270);
+  background-color: var(--primary);
+}
