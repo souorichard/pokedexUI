@@ -1,5 +1,31 @@
 <main class="main">
   <div class="container">
+    <section id="title-page">
+      <div class="title-container">
+        <h1>{{ title }}</h1>
+      </div>
+    </section>
+    <section id="pokedex-filter">
+      <div class="container-filter">
+        <div class="content-filter">
+          <div class="text-search">
+            <label>{{ label }}</label>
+            <div class="input-box">
+              <input type="text">
+            </div>
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+          </div>
+          <div class="subtitle">
+            <p>{{ subtitle }}</p>
+          </div>
+        </div>
+        <div class="card-filter">
+          <div class="card">
+            <h2>{{ textCard }}</h2>
+          </div>
+        </div>
+      </div>
+    </section>
     <pokemon-list></pokemon-list>
   </div>
 </main>

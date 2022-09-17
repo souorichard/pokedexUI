@@ -2,17 +2,21 @@
 @import '../../../../config-scss/variable.scss';
 
 .pokemon-card {
-  max-width: rem-calc(250);
+  max-width: rem-calc(205.17);
   display: flex;
   flex-direction: column;
   padding: rem-calc(20) rem-calc(10);
-  margin: 0 rem-calc(5) rem-calc(50);
+  margin: 0 0 rem-calc(50);
   background-color: var(--secondary);
   border-radius: rem-calc(15);
 
   &__image {
     background-color: #f2f2f2;
     border-radius: rem-calc(15);
+
+    img {
+      max-width: 100%;
+    }
   }
 
   &__number, &__name {

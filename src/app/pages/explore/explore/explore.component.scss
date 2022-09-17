@@ -1,0 +1,118 @@
+@import '../../../../config-scss/rem-calc.scss';
+@import '../../../../config-scss/variable.scss';
+
+#title-page {
+  height: rem-calc(80);
+  display: flex;
+  justify-content: center;
+
+  .title-container {
+    width: rem-calc(895);
+
+    h1 {
+      font-size: rem-calc(30);
+      font-weight: 400;
+      color: #898989;
+      padding: rem-calc(25) 0 rem-calc(16);
+      letter-spacing: rem-calc(1);
+    }
+  }
+}
+
+#pokedex-filter {
+  height: rem-calc(184.2);
+  display: flex;
+  justify-content: center;
+  background-color: #535353;
+
+  .container-filter {
+    width: rem-calc(895);
+    display: flex;
+
+    .content-filter {
+      width: 50%;
+
+      .text-search {
+        position: relative;
+        height: rem-calc(88.2);
+        margin: rem-calc(32) 0 0;
+
+        label {
+          font-size: rem-calc(26.8);
+          color: var(--white);
+          letter-spacing: rem-calc(1);
+        }
+
+        .input-box {
+          max-width: rem-calc(311.67);
+          height: rem-calc(40);
+          margin: rem-calc(5.2) rem-calc(-429.656) 0 0;
+          border-radius: rem-calc(5);
+          border: rem-calc(2) solid var(--primary);
+          background-color: #fff;
+
+          input {
+            width: 100%;
+            font-size: rem-calc(16);
+            padding: rem-calc(8) rem-calc(8);
+            background: transparent;
+            border-radius: rem-calc(5);
+            border: none;
+            outline: none;
+          }
+        }
+
+        button {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          width: rem-calc(45);
+          height: rem-calc(45);
+          background-color: var(--tertiary);
+          border: none;
+          border-radius: rem-calc(10);
+          transition: all ease .3s;
+          cursor: pointer;
+
+          .fa-search {
+            color: #fff;
+          }
+        }
+
+        button:hover {
+          background-color: #aa012b;
+        }
+      }
+
+      .subtitle {
+        margin: 0 0 rem-calc(24);
+
+        p {
+          font-size: rem-calc(16);
+          text-align: justify;
+          color: #fff;
+        }
+      }
+    }
+
+    .card-filter {
+      width: 50%;
+      height: rem-calc(128);
+
+      .card {
+        height: rem-calc(88);
+        padding: 0 0 rem-calc(8);
+        margin: 2em 0 0.5em rem-calc(30);
+        background-color: #4dad5b;
+        border-radius: rem-calc(10);
+
+        h2 {
+          font-size: rem-calc(20);
+          font-weight: 400;
+          padding: rem-calc(15) rem-calc(10) rem-calc(15) rem-calc(20);
+          color: #fff;
+        }
+      }
+    }
+  }
+}
