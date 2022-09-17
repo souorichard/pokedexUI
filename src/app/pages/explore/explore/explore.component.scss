@@ -23,7 +23,7 @@
   height: rem-calc(184.2);
   display: flex;
   justify-content: center;
-  background-color: #535353;
+  background-color: #494949;
 
   .container-filter {
     width: rem-calc(895);
@@ -38,7 +38,8 @@
         margin: rem-calc(32) 0 0;
 
         label {
-          font-size: rem-calc(26.8);
+          font-size: rem-calc(27);
+          font-weight: lighter;
           color: var(--white);
           letter-spacing: rem-calc(1);
         }
@@ -49,7 +50,7 @@
           margin: rem-calc(5.2) rem-calc(-429.656) 0 0;
           border-radius: rem-calc(5);
           border: rem-calc(2) solid var(--primary);
-          background-color: #fff;
+          background-color: var(--white);
 
           input {
             width: 100%;
@@ -64,10 +65,10 @@
 
         button {
           position: absolute;
-          right: 10px;
-          bottom: 10px;
-          width: rem-calc(45);
-          height: rem-calc(45);
+          right: 15px;
+          bottom: 5px;
+          width: rem-calc(48);
+          height: rem-calc(48);
           background-color: var(--tertiary);
           border: none;
           border-radius: rem-calc(10);
@@ -75,7 +76,8 @@
           cursor: pointer;
 
           .fa-search {
-            color: #fff;
+            font-size: rem-calc(20);
+            color: var(--white);
           }
         }
 
@@ -90,7 +92,7 @@
         p {
           font-size: rem-calc(16);
           text-align: justify;
-          color: #fff;
+          color: var(--white);
         }
       }
     }
@@ -110,9 +112,52 @@
           font-size: rem-calc(20);
           font-weight: 400;
           padding: rem-calc(15) rem-calc(10) rem-calc(15) rem-calc(20);
-          color: #fff;
+          color: var(--white);
         }
       }
+    }
+  }
+}
+
+#results {
+  height: rem-calc(96.38);
+  margin-top: rem-calc(20);
+  display: flex;
+  justify-content: center;
+
+  .container-results {
+    width: rem-calc(895);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .button-result {
+      width: rem-calc(345.84);
+      height: rem-calc(49.11);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: rem-calc(16.8);
+      color: var(--white);
+      background-color: var(--tertiary);
+      border-radius: rem-calc(10);
+      border: none;
+      transition: all ease .3s;
+      cursor: pointer;
+
+      .fa-rotate {
+        font-size: rem-calc(20);
+        padding-right: rem-calc(8);
+      }
+    }
+
+    .button-result:hover {
+      background-color: #aa012b;
+    }
+
+    .organize {
+      width: rem-calc(393.92);
+      height: rem-calc(45);
     }
   }
 }

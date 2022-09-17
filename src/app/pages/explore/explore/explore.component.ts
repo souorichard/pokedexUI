@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ExploreComponent implements OnInit {
 
   title: string = 'Pokédex';
-  label: string = 'Nome ou Número';
+  label: string = 'Nome ou número';
   subtitle: string = 'Use a pesquisa avançada para explorar Pokémon por tipo, fraqueza, habilidade e mais!';
   textCard: string = 'Realize a busca por Pokémon pelo nome ou usando o número do Pokémon Nacional';
 
