@@ -161,3 +161,30 @@
     }
   }
 }
+
+.loadSection {
+  height: rem-calc(60);
+  margin-bottom: rem-calc(15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loadMore {
+    width: rem-calc(200);
+    height: rem-calc(40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: rem-calc(16);
+    color: var(--white);
+    background-color: var(--tertiary);
+    border-radius: rem-calc(10);
+    border: none;
+    cursor: pointer;
+    transition: all ease .3s;
+  }
+
+  .loadMore:hover {
+    background-color: #aa012b;
+  }
+}
