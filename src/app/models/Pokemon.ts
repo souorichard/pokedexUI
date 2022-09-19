@@ -7,11 +7,13 @@ export interface Pokemon {
   types: Type[];
 }
 
-export function getPokemonImage( pokemon: Pokemon ): string {
-  return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${getPokemonNumber(pokemon)}.png`;
+export function getPokemonImage(pokemon: Pokemon): string {
+  return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${getPokemonNumber(
+    pokemon
+  )}.png`;
 }
 
-export function getPokemonNumber( pokemon: Pokemon ): string {
+export function getPokemonNumber(pokemon: Pokemon): string {
   return leadingZero(pokemon.number);
 }
 

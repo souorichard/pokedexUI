@@ -17,20 +17,5 @@ export class ExploreComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  valInitial: number = 12;
-  valUpdate: number = 12;
-  valCurrent: number = this.valInitial;
-
-  buttonActive: boolean = false;
-  limitValue: number = this.valInitial;
-
-  function loadMore() {
-    valCurrent += valUpdate;
-    limiteValor = valAtual;
-    if (valAtual >= totalItem) {
-        $scope.botaoAtivo = false; //Desativa o botao de carregar mais
-        return;
-    };
-  }
-
 }
+

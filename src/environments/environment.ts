@@ -4,7 +4,6 @@
 
 export const environment = {
   production: false,
-  allPokemonsUrl: 'https://pokeapi.co/api/v2/pokemon/?limit=12'
 };
 
 /*
