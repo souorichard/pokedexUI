@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Pokemon } from '../models/Pokemon';
 import { from, map, mergeMap } from 'rxjs';
+import { loadMore } from '../models/LoadMore';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ export class PokemonService {
 
   public pokemons: Pokemon[] = [];
 
-  allPokemonsUrl: any = `https://pokeapi.co/api/v2/pokemon/?limit=12`;
+  allPokemonsUrl: any = `https://pokeapi.co/api/v2/pokemon/?limit=${loadMore()}`;
 
   constructor( private httpClient: HttpClient ) {
 

@@ -158,8 +158,18 @@
     .organize {
       width: rem-calc(393.92);
       height: rem-calc(45);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
+}
+
+#list {
+  height: auto;
+  margin-top: rem-calc(50);
+  display: flex;
+  justify-content: center;
 }
 
 .loadSection {
