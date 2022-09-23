@@ -161,6 +161,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      h3 {
+        margin-right: rem-calc(15);
+        color: #898989;
+        font-weight: 300;
+      }
+
+      label {
+        width: rem-calc(254);
+        height: rem-calc(40.77);
+        padding: rem-calc(8) 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--tertiary);
+        font-size: rem-calc(18);
+        color: var(--white);
+        border-radius: rem-calc(10);
+        cursor: pointer;
+
+        .fa-arrow-down {
+          margin-left: rem-calc(10);
+        }
+      }
     }
   }
 }

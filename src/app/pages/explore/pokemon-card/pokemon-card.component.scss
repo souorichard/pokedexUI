@@ -5,8 +5,8 @@
   max-width: rem-calc(205.17);
   display: flex;
   flex-direction: column;
-  padding: rem-calc(20) rem-calc(10);
-  margin: 0 0 rem-calc(50);
+  padding: rem-calc(15) rem-calc(10);
+  margin-bottom: rem-calc(50);
   background-color: var(--secondary);
   border-radius: rem-calc(15);
 
@@ -231,4 +231,20 @@
       color: #fff;
     }
   }
+}
+
+.pokemon-card:hover {
+  animation: animecard ease-out 900ms;
+}
+
+@keyframes animecard {
+
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-1%);
+  }
+
 }

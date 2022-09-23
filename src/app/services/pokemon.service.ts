@@ -9,9 +9,11 @@ import { loadMore } from '../models/LoadMore';
 })
 export class PokemonService {
 
+  public loadMore = loadMore;
+
   public pokemons: Pokemon[] = [];
 
-  allPokemonsUrl: any = `https://pokeapi.co/api/v2/pokemon/?limit=${loadMore()}`;
+  allPokemonsUrl: any = `https://pokeapi.co/api/v2/pokemon/?limit=12&offset=${loadMore()}`;
 
   constructor( private httpClient: HttpClient ) {
 
@@ -31,4 +33,6 @@ export class PokemonService {
     });
 
   }
+
 }
+
